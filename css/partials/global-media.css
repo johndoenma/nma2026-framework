@@ -1,0 +1,7 @@
+/* SET ALL IMAGES AND SVGS TO BE RESPONSIVE ON SMALL SCREENS */
+img,
+svg,
+video {
+    max-width: 100%;
+    height: auto;
+}

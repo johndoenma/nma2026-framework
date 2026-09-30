@@ -1,0 +1,29 @@
+/* GLOBAL COLORS */
+
+/* MAIN SITE UI COLORS */
+body {
+    /* SET MAIN SITE BACKGROUND COLOR */
+    background-color: var(--body-background-color, #fff);
+
+    /* SET MAIN SITE TEXT COLOR */
+    color: var(--body-text-color, #222);
+}
+
+
+/* LINK COLORS */
+a {
+    /* SET TEXT LINK COLORS */
+    color: var(--link-color, #222);
+
+    /* CUSTOM LINK UNDERLINES */
+    /* text-decoration-line: underline; */
+    text-decoration-color: #97e3f6;
+    text-decoration-style: solid;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+
+    &:hover {
+        /* SET TEXT LINK HOVER COLORS */
+        color: var(--link-color-hover, #000);
+    }
+}

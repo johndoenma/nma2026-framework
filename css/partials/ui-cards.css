@@ -1,0 +1,27 @@
+/* UI CARD COMPONENTS */
+
+.card {
+    /* LOCAL VARIABLES */
+    --card-background-color: #fff;
+    --card-text-color: #000;
+
+    background-color: var(--card-background-color, #fff);
+    color: var(--card-text-color, #000);
+
+    border: 1px solid #888;
+    border-radius: 5px;
+    padding: var(--unit-small, 1em);
+    margin-block: var(--unit-small, 1em);
+
+}
+
+/* CARD GROUP */
+.card-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--unit-small, 1em);
+
+    & > .card {
+        margin-block: 0;
+    }
+}

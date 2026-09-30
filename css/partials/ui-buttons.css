@@ -1,0 +1,18 @@
+/* BUTTON COMPONENTS */
+
+.button {
+    display: inline-block;
+    padding-block: var(--unit-small, 1em);
+    padding-inline: var(--unit-small, 1em);
+    background-color: var(--link-color, #222);
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid var(--link-color, #222);
+    border-radius: 5px;
+
+    &:hover {
+        background-color: var(--link-color-hover, #fff);
+        border-color: var(--link-color-hover, #fff);
+        color: #fff;
+    }
+}

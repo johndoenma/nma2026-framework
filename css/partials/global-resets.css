@@ -1,0 +1,21 @@
+/* GLOBAL RESETS */
+
+/* SET INITIAL BOX-SIZING TO IGNORE PADDING & BORDER WIDTHS */
+* {
+    box-sizing: border-box;
+}
+
+/* REMOVE DEFAULT WHITE SPACE IN THE BROWSER */
+body {
+    margin: 0;
+}
+
+/* ENABLE SMOOTH SCROLLING */
+html {
+    scroll-behavior: smooth;
+}
+
+/* OFFSET THE ANCHOR TARGET FOR INLINE LINKS */
+:target {
+    scroll-margin-top: .5em;
+}

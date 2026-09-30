@@ -1,0 +1,54 @@
+/* TABLE OF CONTENTS / CSS PARTIALS */
+
+/* -----------------------------------------------*/
+/* ------------- GLOBALS -------------------------*/
+/* -----------------------------------------------*/
+
+@import url('partials/global-variables.css');
+/* ---- SET MAIN COLORS, FONTS, SIZING UNITS */
+
+@import url('partials/global-resets.css');
+/* ---- BODY MARGIN, BOX-SIZING, & SMOOTH SCROLLING */
+
+@import url('partials/global-colors.css');
+/* ---- SET MAIN TEXT COLOR, BODY BG COLOR, LINK COLORS */
+
+@import url('partials/global-typography.css');
+/* ---- SET MAIN BODY FONT, HEADING FONTS, SIZES, LINE HEIGHTS, etc */
+
+@import url('partials/global-media.css');
+/* ---- RESPONSIVE IMAGES, SVG's, and VIDEO */
+
+@import url('partials/global-helpers.css');
+/* ---- HIDE-VISUALLY, CENTER TEXT, ETC */
+
+
+/* -----------------------------------------------*/
+/* ------------- LAYOUT --------------------------*/
+/* -----------------------------------------------*/
+
+@import url('partials/global-containers.css');
+@import url('partials/global-grid.css');
+
+/* -----------------------------------------------*/
+/* ------------- STRUCTURE -----------------------*/
+/* -----------------------------------------------*/
+
+@import url('partials/global-structure.css');
+
+/* -----------------------------------------------*/
+/* ------------- COMPONENTS ----------------------*/
+/* -----------------------------------------------*/
+
+@import url('partials/ui-buttons.css');
+@import url('partials/ui-cards.css');
+
+/* -----------------------------------------------*/
+/* ------------- ANIMATIONS ----------------------*/
+/* -----------------------------------------------*/
+
+/* @import url('partials/animations.css'); */
+
+/* -----------------------------------------------*/
+/* ------------- CUSTOM STYLES -------------------*/
+/* -----------------------------------------------*/

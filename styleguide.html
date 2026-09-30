@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Base 2026 | Style Guide</title>
+    <meta name="description" content="A simple HTML, CSS, and JS starter template.">
+
+    <!-- MAIN CSS FILE -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="site-logo">
+            <img src="media/logo.svg" alt="Simple Base Logo" width="40" height="40">
+            <h1><a href="index.html">Simple Base</a></h1>
+        </div>
+        <nav class="site-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="styleguide.html">Style Guide</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Style Guide</h1>
+                <h2>A Simple Design System</h2>
+                <p>See below for the start of a style guide.</p>
+            </div>
+        </section>
+
+        <section>
+
+            <div class="container">
+                <div class="row" style="--row-gap: 0;">
+
+                    <!-- ASIDE SIDEBAT AREA -->
+                    <div class="col-3">
+
+                        <aside class="sidebar">
+                            <nav>
+                                <h2>Contents</h2>
+                                <ul>
+                                    <li><a href="#typography">Typography</a></li>
+                                    <li><a href="#colors">Colors</a></li>
+                                    <li><a href="#responsivemedia">Responsive Media</a></li>
+                                    <li><a href="#grid">Grid</a></li>
+                                </ul>
+                            </nav>
+                        </aside>
+
+                    </div>
+
+                    <!-- MAIN CONTENT AREA -->
+                    <div class="col-9">
+
+                        <h2 id="typography">Typography</h2>
+                        <h1>h1 Headline</h1>
+                        <h2>h2 Headline</h2>
+                        <h3>h3 Headline</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error vero perferendis neque, nam
+                            incidunt
+                            eligendi
+                            quidem temporibus laudantium nisi laborum tenetur nulla corrupti molestias esse doloremque
+                            quaerat
+                            vitae
+                            possimus suscipit facere fuga optio quam! Quibusdam quidem, facere, sequi corporis optio
+                            pariatur
+                            tempore
+                            molestias quia animi veniam nemo repellendus, rerum commodi?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error vero perferendis neque, nam
+                            incidunt
+                            eligendi
+                            quidem temporibus laudantium nisi laborum tenetur nulla corrupti molestias esse doloremque
+                            quaerat
+                            vitae
+                            possimus suscipit facere fuga optio quam! Quibusdam quidem, facere, sequi corporis optio
+                            pariatur
+                            tempore
+                            molestias quia animi veniam nemo repellendus, rerum commodi?</p>
+
+                        <hr>
+                        <h2 id="colors">Colors</h2>
+
+                        <div class="card-group">
+
+                            <div class="card" style="--card-background-color: #000; --card-text-color: #fff;">
+                                <h3>Black</h3>
+                                <ul>
+                                    <li>HEX: #000000</li>
+                                </ul>
+                            </div>
+                            <div class="card" style="--card-background-color: #fff; --card-text-color: #000;">
+                                <h3>White</h3>
+                                <ul>
+                                    <li>HEX: #FFFFFF</li>
+                                </ul>
+                            </div>
+                            <div class="card" style="--card-background-color: #f00; --card-text-color: #fff;">
+                                <h3>Brand</h3>
+                                <ul>
+                                    <li>HEX:#ff0000</li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <hr>
+
+                        <h2 id="responsivemedia">Responsive Media</h2>
+
+                        <h3>Standard Images (jpg, png, gif, webm, etc)</h3>
+                        <img src="media/placeholder-3200x1800.jpg" alt="Placeholder Image" width="3200" height="1800">
+
+
+                        <h3>SVGs</h3>
+                        <img src="media/placeholder-3200x1800.svg" alt="Placeholder SVG" width="3200" height="1800">
+                        <svg width="3200" height="1800" viewBox="0 0 3200 1800" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="3200" height="1800" fill="#8b8b8b" />
+                            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="100"
+                                fill="#fff">&lt;svg&gt; Inline
+                                svg &lt;/svg&gt;</text>
+                        </svg>
+
+                        <h3>Videos (mp4, webm, etc)</h3>
+
+                        <h4>Regular Video with Controls</h4>
+                        <video width="1920" height="1080" controls>
+                            <source src="media/placeholder-1920x1080.mp4" type="video/mp4">
+                        </video>
+
+                        <h4>Looping Autoplay Video with No Controls</h4>
+                        <video width="1920" height="1080" muted autoplay loop playsinline>
+                            <source src="media/placeholder-1920x1080.mp4" type="video/mp4">
+                        </video>
+                        <pre><code>
+&lt;video muted autoplay loop playsinline&gt;
+                        </code>
+                        </pre>
+
+                        <hr>
+
+                        <h2 id="grid">Grid Systems</h2>
+
+                        <div class="demo">
+
+                            <h3>Semantic Grid:</h3>
+
+                            <div class="row">
+                                <div class="one-whole">one whole</div>
+                            </div>
+
+                            <div class="row">
+                                <div class="one-half">&frac12;</div>
+                                <div class="one-half">&frac12;</div>
+                            </div>
+
+                            <div class="row">
+                                <div class="one-third">&frac13;</div>
+                                <div class="one-third">&frac13;</div>
+                                <div class="one-third">&frac13;</div>
+                            </div>
+
+                            <div class="row">
+                                <div class="two-thirds">&frac23;</div>
+                                <div class="one-third">&frac13;</div>
+                            </div>
+
+                            <div class="row">
+                                <div class="one-fourth">&frac14;</div>
+                                <div class="one-fourth">&frac14;</div>
+                                <div class="one-fourth">&frac14;</div>
+                                <div class="one-fourth">&frac14;</div>
+                            </div>
+
+                            <div class="row">
+                                <div class="one-fourth">&frac14;</div>
+                                <div class="three-fourths">&frac34;</div>
+                            </div>
+
+                            <div class="row">
+                                <div class="one-third centered">&frac13; centered</div>
+                            </div>
+
+                            <div class="row">
+                                <div class="one-half centered">&frac12; centered</div>
+                            </div>
+
+                            <div class="row">
+                                <div class="two-thirds centered">&frac23; centered</div>
+                            </div>
+
+                            <h3>12 Column Grid:</h3>
+                            <div class="row">
+                                <div class="col-1">col-1</div>
+                                <div class="col-11">col-11</div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-2">col-2</div>
+                                <div class="col-10">col-10</div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-3">col-3</div>
+                                <div class="col-9">col-9</div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-4">col-4</div>
+                                <div class="col-8">col-8</div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-5">col-5</div>
+                                <div class="col-7">col-7</div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-6">col-6</div>
+                                <div class="col-6">col-6</div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-2 centered">col-2 centered</div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-4 centered">col-4 centered</div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-6 centered">col-6 centered</div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-8 centered">col-8 centered</div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-10 centered">col-10 centered</div>
+                            </div>
+
+                            <h3>Pushes:</h3>
+
+                            <div class="row">
+                                <div class="col-2 push-1">push-1</div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-2 push-2">push-2</div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-2 push-3">push-3</div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-2 push-4">push-4</div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-2 push-5">push-5</div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-2 push-6">push-6</div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-2 push-7">push-7</div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-2 push-8">push-8</div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-2 push-9">push-9</div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-2 push-10">push-10</div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-1 push-11">push-11</div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-9">
+                    <div class="footer-about">
+                        <h2><a href="index.html">Simple Base</a></h2>
+                        <p>Footer description text goes here. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Facere
+                            fuga
+                            optio quam! Quibusdam quidem, facere, sequi corporis optio pariatur
+                            tempore
+                            molestias quia animi veniam nemo repellendus, rerum commodi?</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <h2>Pages</h2>
+                    <nav class="footer-nav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="styleguide.html">Style Guide</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
+
+    <!-- MAIN JS FILE -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

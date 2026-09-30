@@ -1,0 +1,36 @@
+/* GLOBAL VARIABLES */
+:root {
+
+    /* MAIN UI COLORS */
+    --body-background-color: #fff;
+    --body-text-color: #222;
+
+    /* LINK COLORS */
+    --link-color: #1746AB;
+    --link-color-hover: #0D2559;
+
+    /* DEFINE FONTS */
+    --font-sans: system-ui, sans-serif;
+    --font-serif: Georgia, 'Times New Roman', Times, serif;
+
+    /* SET FONTS */
+    --font-body: var(--font-sans);
+    --font-headings: var(--font-sans);
+
+    /* SIZING UNITS */
+    --unit-extrasmall: .5rem;
+    --unit-small: 1rem;
+    --unit-medium: 2rem;
+    --unit-large: 3rem;
+    --unit-extralarge: 6rem;
+
+    /* SITE STRUCTURE COLORS */
+    --site-header-background-color: #fff;
+    --site-header-text-color: #000;
+
+    --site-footer-background-color: #eee;
+    --site-footer-text-color: #000;
+
+    --sitenav-drawer-menu-background-color: #ccffff;
+    --sitenav-drawer-menu-text-color: #000;
+}
