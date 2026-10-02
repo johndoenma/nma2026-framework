@@ -1,0 +1,74 @@
+/* UI ANIMATIONS */
+
+/* BESPOKE HERO ANIMATION */
+.hero {
+    animation-name: hero-animate;
+    animation-duration: .3s;
+    animation-delay: .2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    transform-origin: left top;
+
+    /* SET STARTING ANIMATION STATE */
+    scale: 0 1;
+}
+
+@keyframes hero-animate {
+    0% {
+        scale: 0 1;
+    }
+    100% {
+        scale: 1 1;
+    }
+}
+
+/* FADE IN FROM LEFT */
+[data-viewstate="active"] .fade-in-from-left {
+    --animation-delay: 0s;
+    animation-name: fade-in-from-left;
+    animation-duration: .4s;
+    animation-timing-function: cubic-bezier(0,.5,.5,1);
+    animation-fill-mode: forwards;
+    animation-delay: var(--animation-delay, 0);
+
+    /* SET STARTING ANIMATION STATE */
+    opacity: 0;
+    translate: -50px 0;
+
+}
+
+@keyframes fade-in-from-left {
+    /* 0% {
+        opacity: 0;
+        translate: -50px 0;
+    } */
+    100% {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+/* FADE IN FROM TOP */
+[data-viewstate="active"] .fade-in-from-top {
+    --animation-delay: 0s;
+    animation-name: fade-in-from-top;
+    animation-duration: .4s;
+    animation-timing-function: cubic-bezier(0,.5,.5,1);
+    animation-fill-mode: forwards;
+    animation-delay: var(--animation-delay, 0);
+
+    /* SET STARTING ANIMATION STATE */
+    opacity: 0;
+    translate: 0 -50px;
+
+}
+
+@keyframes fade-in-from-top {
+    /* 0% {
+        opacity: 0;
+        translate: 0 -50px;
+    } */
+    100% {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
