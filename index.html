@@ -14,27 +14,7 @@
 
 <body>
 
-    <header class="site-header animate-on-scroll">
-        <div class="site-logo fade-in-from-top">
-            <img src="media/logo.svg" alt="NMA 2026 Framework Logo" width="40" height="40">
-            <h1><a href="index.html">NMA 2026 Framework</a></h1>
-        </div>
-        <nav class="site-nav mobile-menu" data-navstate="closed">
-            <button class="menu-button">
-                <svg class="menu-button-navicon rotate-to-x squish-to-x" width="30" height="24">
-                    <rect class="top-line" x="0" y="0" height="4" width="30"></rect>
-                    <rect class="mid-line" x="0" y="10" height="4" width="30"></rect>
-                    <rect class="bot-line" x="0" y="20" height="4" width="30"></rect>
-                </svg>
-                <span class="menu-button-text">Menu</span>
-            </button>
-            <ul>
-                <li class="fade-in-from-top" style="--animation-delay: 0.2s;"><a href="index.html">Home</a></li>
-                <li class="fade-in-from-top" style="--animation-delay: 0.3s;"><a href="styleguide.html">Style Guide</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <site-header></site-header>
 
     <main>
         <section class="hero">
@@ -137,7 +117,7 @@
     </footer>
 
     <!-- MAIN JS FILE -->
-    <script src="js/script.js"></script>
+    <script src="js/script.js" type="module"></script>
 
 </body>
 

@@ -72,3 +72,12 @@
         translate: 0 0;
     }
 }
+
+/* ANIMATED RED CARD ONLY */
+.card.animate-on-scroll {
+    transition: all 2s ease-out;
+    translate: 200px 0px;
+}
+.card.animate-on-scroll[data-viewstate="active"] {
+    translate: 0px 0px;
+}

@@ -9,6 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: var(--unit-small);
 
   /* REMOVE UNDERLINES FROM ALL HEADER TEXT LINKS */
   a {
@@ -109,6 +110,7 @@
     /* DEFAULT STYLING FOR MOBILE MENU */
     ul {
       position: fixed;
+      z-index: 100;
       top: -100%;
       left: 0;
       margin: 0;
@@ -271,6 +273,13 @@
   25% { translate: 0% -41.5%; rotate: 0deg; }
   50% { translate: 0% -41.5%; }
   100% { translate: 0 0; }
+}
+
+/* FIX THE WIDTH OF SITE LOGO ON SMALL SCREENS WITH A MOBILE MENU */
+@media (width <= 768px) {
+  .site-header:has(.mobile-menu) .site-logo {
+    max-width: calc(100% - 3.5em);
+  }
 }
 
 /* SITE FOOTER */
