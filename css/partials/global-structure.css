@@ -40,6 +40,22 @@
 
   }
 
+  &.on-top-of-hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+
+}
+
+.on-scroll-snap-sections .site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 /* DEFAULT SITE NAV (NO MOBILE MENU */
@@ -307,6 +323,11 @@
     }
 
   }
+
+  /* &.onscroll-wipe {
+    justify-content: end;
+  } */
+
 }
 
 /* SECTIONS */

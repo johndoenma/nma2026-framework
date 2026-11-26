@@ -6,8 +6,8 @@ class siteHeader extends HTMLElement {
     
       
       <!-- COMPONENT MARKUP GOES HERE -->
-      <header class="site-header animate-on-scroll">
-        <div class="site-logo fade-in-from-top">
+      <header class="site-header">
+        <div class="site-logo">
             <a href="index.html"><img src="media/logo.svg" alt="NMA 2026 Framework Logo" width="40" height="40"></a>
             <h1><a href="index.html">NMA 2026 Framework</a></h1>
         </div>
@@ -21,8 +21,8 @@ class siteHeader extends HTMLElement {
                 <span class="menu-button-text">Menu</span>
             </button>
             <ul>
-                <li class="fade-in-from-top" style="--animation-delay: 0.2s;"><a href="index.html">Home</a></li>
-                <li class="fade-in-from-top" style="--animation-delay: 0.3s;"><a href="styleguide.html">Style Guide</a>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="styleguide.html">Style Guide</a>
                 </li>
             </ul>
         </nav>

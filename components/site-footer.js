@@ -6,7 +6,7 @@ class siteFooter extends HTMLElement {
     
       
       <!-- COMPONENT MARKUP GOES HERE -->
-      <footer class="site-footer">
+      <footer class="site-footer onscroll-wipe animate-on-scroll">
         <div class="container">
             <div class="row">
                 <div class="col-9">

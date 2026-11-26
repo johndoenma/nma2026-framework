@@ -43,27 +43,7 @@
     }
 }
 
-/* BESPOKE HERO ANIMATION */
-[data-viewstate="active"].hero {
-    animation-name: hero-animate;
-    animation-duration: .3s;
-    animation-delay: .2s;
-    animation-timing-function: ease-out;
-    animation-fill-mode: forwards;
-    transform-origin: left top;
 
-    /* SET STARTING ANIMATION STATE */
-    scale: 0 1;
-}
-
-@keyframes hero-animate {
-    0% {
-        scale: 0 1;
-    }
-    100% {
-        scale: 1 1;
-    }
-}
 
 /* FADE IN FROM LEFT */
 [data-viewstate="active"] .fade-in-from-left {
@@ -114,4 +94,109 @@
         opacity: 1;
         translate: 0 0;
     }
+}
+
+/* ON SCROLL SNAP SECTIONS */
+
+.on-scroll-snap-sections .onscroll-wipe {
+    position: relative;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd;
+}
+
+@media (width > 768px) {
+  .on-scroll-snap-sections {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+  }
+  .on-scroll-snap-sections .onscroll-wipe {
+    scroll-snap-align: start;
+    overflow-x: hidden;
+  }
+}
+
+/* HORIZONTAL BAR WIPE ANIMATION */
+.onscroll-wipe::before,
+.onscroll-wipe::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  transition: all .5s cubic-bezier(0,.5,.5,1);
+  transition-delay: .15s;
+  background-color: #888;
+  z-index: 500;
+}
+.onscroll-wipe::before {
+  top: 0;
+}
+.onscroll-wipe::after {
+  top: 50%;
+}
+[data-viewstate="active"].onscroll-wipe::before {
+  transition-delay: .3s;
+}
+[data-viewstate="active"].onscroll-wipe::after {
+  transition-delay: .4s;
+}
+
+[data-viewstate="active"].onscroll-wipe::before,
+[data-viewstate="active"].onscroll-wipe::after {
+  left: 0;
+  transform: translateX(-100%);
+}
+
+[data-viewstate="active"].onscroll-wipe:nth-child(even)::before,
+[data-viewstate="active"].onscroll-wipe:nth-child(even)::after {
+  right: 0;
+  transform: translateX(100%);
+}
+
+/* CONTENT CARDS  */
+.nma-sectionwrapper {
+  background-color: #fff;
+  width: 100%;
+  /* padding-inline: 20vw; */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.onscroll-wipe .nma-sectionwrapper {
+  opacity: 0;
+}
+
+/* CONTENT CARDS SLIDE IN AND SCALE ANIMATION */
+[data-viewstate="active"].onscroll-wipe .nma-sectionwrapper {
+  animation-name: scale-fromleft;
+  animation-duration: 1.5s;
+  animation-delay: .85s;
+  animation-fill-mode: forwards;
+/*   animation-timing-function: cubic-bezier(0,.5,0,1); */
+  animation-timing-function: linear(0, 0.013 1%, 0.051 2.2%, 0.404 9.8%, 0.51 12.6%, 0.602 15.5%, 0.683 18.7%, 0.754 22.2%, 0.813 26%, 0.861 30.2%, 0.9 34.8%, 0.931 40%, 0.972 52.7%, 0.992 70.2%, 1);
+}
+
+@keyframes scale-fromleft {
+  0% { transform: scale(.7) translateX(-50%); opacity: 1; }
+  50% { transform: scale(.7) translateX(0px); opacity: 1;  }
+  100% { transform: scale(1) translateX(0px); opacity: 1;  }
+}
+
+[data-viewstate="active"].onscroll-wipe:nth-child(odd) .nma-sectionwrapper {
+  animation-name: scale-fromright;
+}
+
+@keyframes scale-fromright {
+  0% { transform: scale(.7) translateX(50%); opacity: 1; }
+  40% { transform: scale(.7) translateX(0px); opacity: 1;  }
+  100% { transform: scale(1) translateX(0px); opacity: 1; }
 }

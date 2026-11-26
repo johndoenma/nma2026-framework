@@ -25,7 +25,7 @@
     --unit-extralarge: 6rem;
 
     /* SITE STRUCTURE COLORS */
-    --site-header-background-color: #fff;
+    --site-header-background-color: transparent;
     --site-header-text-color: #000;
 
     --site-footer-background-color: #eee;

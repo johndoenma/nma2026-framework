@@ -6,3 +6,10 @@
 }
 
 /* OPTIONAL: ADD MORE CONTAINERS HERE IF NEEDED */
+
+/* WIDE CONTAINER */
+.container-wide {
+    max-width: 1400px;
+    margin-inline: auto;
+    padding-inline: var(--unit-small);
+}
