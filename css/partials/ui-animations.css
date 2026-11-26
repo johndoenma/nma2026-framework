@@ -1,7 +1,50 @@
 /* UI ANIMATIONS */
 
+/* SPLASH SCREEN ANIMATION */
+.splash-screen {
+    background-color: black;
+    
+    /* MAKE IT BIG AND ON TOP */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100svh;
+    z-index: 9000;
+
+    /* VERT + HORIZ CENTERING */
+    display: grid;
+    place-items: center;
+
+    /* ANIMATION */
+    animation: splash-screen-exit .2s ease-out .5s forwards;
+
+}
+
+@keyframes splash-screen-exit {
+    0% {
+        translate: 0 0;
+    }
+    100% {
+        translate: 0 -100%;
+    }
+}
+
+.splash-screen .splash-logo {
+    animation: splash-logo-enter .5s ease-out forwards;
+}
+
+@keyframes splash-logo-enter {
+    0% {
+        scale: .6;
+    }
+    100% {
+        scale: 1;
+    }
+}
+
 /* BESPOKE HERO ANIMATION */
-.hero {
+[data-viewstate="active"].hero {
     animation-name: hero-animate;
     animation-duration: .3s;
     animation-delay: .2s;
@@ -71,13 +114,4 @@
         opacity: 1;
         translate: 0 0;
     }
-}
-
-/* ANIMATED RED CARD ONLY */
-.card.animate-on-scroll {
-    transition: all 2s ease-out;
-    translate: 200px 0px;
-}
-.card.animate-on-scroll[data-viewstate="active"] {
-    translate: 0px 0px;
 }

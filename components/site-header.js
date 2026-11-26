@@ -8,7 +8,7 @@ class siteHeader extends HTMLElement {
       <!-- COMPONENT MARKUP GOES HERE -->
       <header class="site-header animate-on-scroll">
         <div class="site-logo fade-in-from-top">
-            <img src="media/logo.svg" alt="NMA 2026 Framework Logo" width="40" height="40">
+            <a href="index.html"><img src="media/logo.svg" alt="NMA 2026 Framework Logo" width="40" height="40"></a>
             <h1><a href="index.html">NMA 2026 Framework</a></h1>
         </div>
         <nav class="site-nav mobile-menu" data-navstate="closed">

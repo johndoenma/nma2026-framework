@@ -13,6 +13,12 @@
     padding: var(--unit-small, 1em);
     margin-block: var(--unit-small, 1em);
 
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
 }
 
 /* CARD GROUP */
