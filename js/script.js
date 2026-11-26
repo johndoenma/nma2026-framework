@@ -1,5 +1,6 @@
 /* IMPORT WEB COMPONENTS */
 import "../components/site-header.js";
+import "../components/site-footer.js";
 
 /* ENABLE SCROLL TRIGGERED ANIMATION ON ALL SECTIONS */
 // CHANGE ACTIVE STATE FOR ALL TARGET ELEMENTS WITH INTERSECTION OBSERVER
